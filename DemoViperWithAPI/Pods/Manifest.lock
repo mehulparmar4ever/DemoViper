@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - IQKeyboardManagerSwift (6.1.1)
+  - ObjectMapper (3.4.1)
+  - ReachabilitySwift (4.3.1)
+  - SDCAlertView (9.0.1)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - SVProgressHUD (2.2.6)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - IQKeyboardManagerSwift (= 6.1.1)
+  - ObjectMapper (= 3.4.1)
+  - ReachabilitySwift
+  - SDCAlertView (= 9.0.1)
+  - SDWebImage
+  - SVProgressHUD (from `https://github.com/SVProgressHUD/SVProgressHUD.git`)
+  - SwiftyJSON (~> 4.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - IQKeyboardManagerSwift
+    - ObjectMapper
+    - ReachabilitySwift
+    - SDCAlertView
+    - SDWebImage
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SVProgressHUD:
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+CHECKOUT OPTIONS:
+  SVProgressHUD:
+    :commit: 4fdf3fdc8703fd9915dae33fc1363c604a06b24e
+    :git: https://github.com/SVProgressHUD/SVProgressHUD.git
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SDCAlertView: f24c447279278dca39d41562b414276980b066d8
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SVProgressHUD: 6ed134667e9ebb2f33679e8273cd48fd3fa349e5
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: ed6a757d31cd8e9205cc1d96cb45495162fc009e
+
+COCOAPODS: 1.5.3

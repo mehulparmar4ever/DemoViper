@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217CD08822C8E3BF008A565E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD08722C8E3BF008A565E /* AppDelegate.swift */; };
+		217CD08D22C8E3BF008A565E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217CD08B22C8E3BF008A565E /* Main.storyboard */; };
+		217CD08F22C8E3C1008A565E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217CD08E22C8E3C1008A565E /* Assets.xcassets */; };
+		217CD09222C8E3C1008A565E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217CD09022C8E3C1008A565E /* LaunchScreen.storyboard */; };
+		217CD0A422C8EA57008A565E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD0A322C8EA57008A565E /* LoginViewController.swift */; };
+		217CD12822C8FB35008A565E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD12722C8FB35008A565E /* NetworkManager.swift */; };
+		217CD12B22C8FB52008A565E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD12A22C8FB52008A565E /* APIService.swift */; };
+		217CD12E22C8FB96008A565E /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD12D22C8FB96008A565E /* CustomAlert.swift */; };
+		217CD13022C8FF69008A565E /* StaticConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD12F22C8FF68008A565E /* StaticConstantManager.swift */; };
+		217CD13222C90081008A565E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13122C90081008A565E /* String.swift */; };
+		217CD13422C9011D008A565E /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13322C9011D008A565E /* ModelManager.swift */; };
+		217CD13822C9023E008A565E /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13622C9023E008A565E /* NSDictionary+Additions.m */; };
+		217CD13A22C90287008A565E /* InternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13922C90287008A565E /* InternetManager.swift */; };
+		217CD13C22C9029C008A565E /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13B22C9029C008A565E /* HRToast+UIView.swift */; };
+		217CD13F22C9046B008A565E /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD13E22C9046B008A565E /* LoginInteractor.swift */; };
+		217CD14122C90477008A565E /* LoginPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14022C90477008A565E /* LoginPresentor.swift */; };
+		217CD14322C9057A008A565E /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14222C9057A008A565E /* LoginRouter.swift */; };
+		217CD14522C90585008A565E /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14422C90585008A565E /* LoginProtocol.swift */; };
+		217CD14722C90914008A565E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14622C90914008A565E /* LoginModel.swift */; };
+		217CD14922C913D6008A565E /* EnumManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14822C913D6008A565E /* EnumManager.swift */; };
+		217CD14C22C91959008A565E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14B22C91959008A565E /* HomeViewController.swift */; };
+		217CD14F22C9197C008A565E /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD14E22C9197C008A565E /* HomeRouter.swift */; };
+		217CD15222C91AA7008A565E /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD15122C91AA7008A565E /* HomeProtocol.swift */; };
+		217CD15522C91B4F008A565E /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD15422C91B4F008A565E /* HomeModel.swift */; };
+		217CD15822C91C5A008A565E /* HomePresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD15722C91C5A008A565E /* HomePresentor.swift */; };
+		217CD15B22C91E38008A565E /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD15A22C91E38008A565E /* HomeInteractor.swift */; };
+		217CD15E22C93E84008A565E /* MyEmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217CD15C22C93E83008A565E /* MyEmployeeCell.swift */; };
+		217CD15F22C93E84008A565E /* MyEmployeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217CD15D22C93E84008A565E /* MyEmployeeCell.xib */; };
+		79446F32C2C085EC0177288D /* Pods_DemoViperWithAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FD312E6961FB6EA1EFF0089 /* Pods_DemoViperWithAPI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		217CD08422C8E3BF008A565E /* DemoViperWithAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoViperWithAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		217CD08722C8E3BF008A565E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		217CD08C22C8E3BF008A565E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		217CD08E22C8E3C1008A565E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		217CD09122C8E3C1008A565E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		217CD09322C8E3C1008A565E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217CD0A322C8EA57008A565E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		217CD0E922C8F359008A565E /* DemoViperWithAPI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoViperWithAPI-Bridging-Header.h"; sourceTree = "<group>"; };
+		217CD12722C8FB35008A565E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		217CD12A22C8FB52008A565E /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		217CD12D22C8FB96008A565E /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		217CD12F22C8FF68008A565E /* StaticConstantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticConstantManager.swift; sourceTree = "<group>"; };
+		217CD13122C90081008A565E /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		217CD13322C9011D008A565E /* ModelManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		217CD13622C9023E008A565E /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
+		217CD13722C9023E008A565E /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
+		217CD13922C90287008A565E /* InternetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetManager.swift; sourceTree = "<group>"; };
+		217CD13B22C9029C008A565E /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		217CD13E22C9046B008A565E /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		217CD14022C90477008A565E /* LoginPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresentor.swift; sourceTree = "<group>"; };
+		217CD14222C9057A008A565E /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		217CD14422C90585008A565E /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		217CD14622C90914008A565E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		217CD14822C913D6008A565E /* EnumManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumManager.swift; sourceTree = "<group>"; };
+		217CD14B22C91959008A565E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		217CD14E22C9197C008A565E /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		217CD15122C91AA7008A565E /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		217CD15422C91B4F008A565E /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		217CD15722C91C5A008A565E /* HomePresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentor.swift; sourceTree = "<group>"; };
+		217CD15A22C91E38008A565E /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		217CD15C22C93E83008A565E /* MyEmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEmployeeCell.swift; sourceTree = "<group>"; };
+		217CD15D22C93E84008A565E /* MyEmployeeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyEmployeeCell.xib; sourceTree = "<group>"; };
+		24E6EBDEB99A6AC5DB27150F /* Pods-DemoViperWithAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoViperWithAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoViperWithAPI/Pods-DemoViperWithAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		794255C858C9DC9F2F313171 /* Pods-DemoViperWithAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoViperWithAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoViperWithAPI/Pods-DemoViperWithAPI.release.xcconfig"; sourceTree = "<group>"; };
+		9FD312E6961FB6EA1EFF0089 /* Pods_DemoViperWithAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoViperWithAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		217CD08122C8E3BF008A565E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79446F32C2C085EC0177288D /* Pods_DemoViperWithAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217CD07B22C8E3BF008A565E = {
+			isa = PBXGroup;
+			children = (
+				217CD08622C8E3BF008A565E /* DemoViperWithAPI */,
+				217CD08522C8E3BF008A565E /* Products */,
+				E268E6AC68BAC664889ED6D6 /* Pods */,
+				A660DFB39EDBF0D8939ADFA2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		217CD08522C8E3BF008A565E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				217CD08422C8E3BF008A565E /* DemoViperWithAPI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		217CD08622C8E3BF008A565E /* DemoViperWithAPI */ = {
+			isa = PBXGroup;
+			children = (
+				217CD0E922C8F359008A565E /* DemoViperWithAPI-Bridging-Header.h */,
+				217CD08722C8E3BF008A565E /* AppDelegate.swift */,
+				217CD12522C8FB21008A565E /* Utility */,
+				217CD0A522C8EB69008A565E /* Controller */,
+				217CD08B22C8E3BF008A565E /* Main.storyboard */,
+				217CD08E22C8E3C1008A565E /* Assets.xcassets */,
+				217CD09022C8E3C1008A565E /* LaunchScreen.storyboard */,
+				217CD09322C8E3C1008A565E /* Info.plist */,
+			);
+			path = DemoViperWithAPI;
+			sourceTree = "<group>";
+		};
+		217CD09B22C8E95F008A565E /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				217CD09D22C8E9F5008A565E /* view */,
+				217CD09E22C8EA01008A565E /* interactor */,
+				217CD09F22C8EA06008A565E /* presentor */,
+				217CD0A022C8EA0F008A565E /* entity */,
+				217CD0A122C8EA17008A565E /* router */,
+				217CD0A222C8EA20008A565E /* protocol */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		217CD09C22C8E9E8008A565E /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14A22C91944008A565E /* view */,
+				217CD15922C91E0C008A565E /* interector */,
+				217CD15622C91C4B008A565E /* presentor */,
+				217CD15322C91B25008A565E /* entity */,
+				217CD14D22C91965008A565E /* router */,
+				217CD15022C91A98008A565E /* protocol */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		217CD09D22C8E9F5008A565E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				217CD0A322C8EA57008A565E /* LoginViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		217CD09E22C8EA01008A565E /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				217CD13E22C9046B008A565E /* LoginInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		217CD09F22C8EA06008A565E /* presentor */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14022C90477008A565E /* LoginPresentor.swift */,
+			);
+			path = presentor;
+			sourceTree = "<group>";
+		};
+		217CD0A022C8EA0F008A565E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14622C90914008A565E /* LoginModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		217CD0A122C8EA17008A565E /* router */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14222C9057A008A565E /* LoginRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		217CD0A222C8EA20008A565E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14422C90585008A565E /* LoginProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		217CD0A522C8EB69008A565E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				217CD09C22C8E9E8008A565E /* HomeModule */,
+				217CD09B22C8E95F008A565E /* LoginModule */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		217CD12522C8FB21008A565E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				217CD12C22C8FB7B008A565E /* Extra Utility */,
+				217CD12622C8FB28008A565E /* Network Manager */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		217CD12622C8FB28008A565E /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				217CD12722C8FB35008A565E /* NetworkManager.swift */,
+				217CD12922C8FB40008A565E /* APIService */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		217CD12922C8FB40008A565E /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				217CD12A22C8FB52008A565E /* APIService.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		217CD12C22C8FB7B008A565E /* Extra Utility */ = {
+			isa = PBXGroup;
+			children = (
+				217CD13922C90287008A565E /* InternetManager.swift */,
+				217CD13322C9011D008A565E /* ModelManager.swift */,
+				217CD12D22C8FB96008A565E /* CustomAlert.swift */,
+				217CD12F22C8FF68008A565E /* StaticConstantManager.swift */,
+				217CD14822C913D6008A565E /* EnumManager.swift */,
+				217CD13D22C902A4008A565E /* Extension */,
+			);
+			path = "Extra Utility";
+			sourceTree = "<group>";
+		};
+		217CD13522C9023E008A565E /* NSDictionary+Additions */ = {
+			isa = PBXGroup;
+			children = (
+				217CD13622C9023E008A565E /* NSDictionary+Additions.m */,
+				217CD13722C9023E008A565E /* NSDictionary+Additions.h */,
+			);
+			path = "NSDictionary+Additions";
+			sourceTree = "<group>";
+		};
+		217CD13D22C902A4008A565E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				217CD13122C90081008A565E /* String.swift */,
+				217CD13B22C9029C008A565E /* HRToast+UIView.swift */,
+				217CD13522C9023E008A565E /* NSDictionary+Additions */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		217CD14A22C91944008A565E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14B22C91959008A565E /* HomeViewController.swift */,
+				217CD15C22C93E83008A565E /* MyEmployeeCell.swift */,
+				217CD15D22C93E84008A565E /* MyEmployeeCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		217CD14D22C91965008A565E /* router */ = {
+			isa = PBXGroup;
+			children = (
+				217CD14E22C9197C008A565E /* HomeRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		217CD15022C91A98008A565E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				217CD15122C91AA7008A565E /* HomeProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		217CD15322C91B25008A565E /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				217CD15422C91B4F008A565E /* HomeModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		217CD15622C91C4B008A565E /* presentor */ = {
+			isa = PBXGroup;
+			children = (
+				217CD15722C91C5A008A565E /* HomePresentor.swift */,
+			);
+			path = presentor;
+			sourceTree = "<group>";
+		};
+		217CD15922C91E0C008A565E /* interector */ = {
+			isa = PBXGroup;
+			children = (
+				217CD15A22C91E38008A565E /* HomeInteractor.swift */,
+			);
+			path = interector;
+			sourceTree = "<group>";
+		};
+		A660DFB39EDBF0D8939ADFA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FD312E6961FB6EA1EFF0089 /* Pods_DemoViperWithAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E268E6AC68BAC664889ED6D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24E6EBDEB99A6AC5DB27150F /* Pods-DemoViperWithAPI.debug.xcconfig */,
+				794255C858C9DC9F2F313171 /* Pods-DemoViperWithAPI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		217CD08322C8E3BF008A565E /* DemoViperWithAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217CD09622C8E3C1008A565E /* Build configuration list for PBXNativeTarget "DemoViperWithAPI" */;
+			buildPhases = (
+				68AFBB5EE4BC00B4061B6A7B /* [CP] Check Pods Manifest.lock */,
+				217CD08022C8E3BF008A565E /* Sources */,
+				217CD08122C8E3BF008A565E /* Frameworks */,
+				217CD08222C8E3BF008A565E /* Resources */,
+				75EC91EF5C79B647EB4D4545 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoViperWithAPI;
+			productName = DemoViperWithAPI;
+			productReference = 217CD08422C8E3BF008A565E /* DemoViperWithAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		217CD07C22C8E3BF008A565E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Demo Project";
+				TargetAttributes = {
+					217CD08322C8E3BF008A565E = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 217CD07F22C8E3BF008A565E /* Build configuration list for PBXProject "DemoViperWithAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 217CD07B22C8E3BF008A565E;
+			productRefGroup = 217CD08522C8E3BF008A565E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				217CD08322C8E3BF008A565E /* DemoViperWithAPI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		217CD08222C8E3BF008A565E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217CD09222C8E3C1008A565E /* LaunchScreen.storyboard in Resources */,
+				217CD15F22C93E84008A565E /* MyEmployeeCell.xib in Resources */,
+				217CD08F22C8E3C1008A565E /* Assets.xcassets in Resources */,
+				217CD08D22C8E3BF008A565E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68AFBB5EE4BC00B4061B6A7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoViperWithAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75EC91EF5C79B647EB4D4545 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoViperWithAPI/Pods-DemoViperWithAPI-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCAlertView/SDCAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoViperWithAPI/Pods-DemoViperWithAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		217CD08022C8E3BF008A565E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217CD12822C8FB35008A565E /* NetworkManager.swift in Sources */,
+				217CD13422C9011D008A565E /* ModelManager.swift in Sources */,
+				217CD0A422C8EA57008A565E /* LoginViewController.swift in Sources */,
+				217CD12B22C8FB52008A565E /* APIService.swift in Sources */,
+				217CD15222C91AA7008A565E /* HomeProtocol.swift in Sources */,
+				217CD15822C91C5A008A565E /* HomePresentor.swift in Sources */,
+				217CD14F22C9197C008A565E /* HomeRouter.swift in Sources */,
+				217CD08822C8E3BF008A565E /* AppDelegate.swift in Sources */,
+				217CD14C22C91959008A565E /* HomeViewController.swift in Sources */,
+				217CD14722C90914008A565E /* LoginModel.swift in Sources */,
+				217CD13222C90081008A565E /* String.swift in Sources */,
+				217CD13822C9023E008A565E /* NSDictionary+Additions.m in Sources */,
+				217CD14122C90477008A565E /* LoginPresentor.swift in Sources */,
+				217CD12E22C8FB96008A565E /* CustomAlert.swift in Sources */,
+				217CD13F22C9046B008A565E /* LoginInteractor.swift in Sources */,
+				217CD13A22C90287008A565E /* InternetManager.swift in Sources */,
+				217CD13C22C9029C008A565E /* HRToast+UIView.swift in Sources */,
+				217CD14522C90585008A565E /* LoginProtocol.swift in Sources */,
+				217CD15522C91B4F008A565E /* HomeModel.swift in Sources */,
+				217CD14322C9057A008A565E /* LoginRouter.swift in Sources */,
+				217CD15B22C91E38008A565E /* HomeInteractor.swift in Sources */,
+				217CD15E22C93E84008A565E /* MyEmployeeCell.swift in Sources */,
+				217CD13022C8FF69008A565E /* StaticConstantManager.swift in Sources */,
+				217CD14922C913D6008A565E /* EnumManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		217CD08B22C8E3BF008A565E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217CD08C22C8E3BF008A565E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		217CD09022C8E3C1008A565E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				217CD09122C8E3C1008A565E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		217CD09422C8E3C1008A565E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		217CD09522C8E3C1008A565E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		217CD09722C8E3C1008A565E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24E6EBDEB99A6AC5DB27150F /* Pods-DemoViperWithAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YCQ34UY29T;
+				INFOPLIST_FILE = DemoViperWithAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DemoViperWithAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoViperWithAPI/DemoViperWithAPI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		217CD09822C8E3C1008A565E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 794255C858C9DC9F2F313171 /* Pods-DemoViperWithAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YCQ34UY29T;
+				INFOPLIST_FILE = DemoViperWithAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.DemoViperWithAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DemoViperWithAPI/DemoViperWithAPI-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		217CD07F22C8E3BF008A565E /* Build configuration list for PBXProject "DemoViperWithAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217CD09422C8E3C1008A565E /* Debug */,
+				217CD09522C8E3C1008A565E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217CD09622C8E3C1008A565E /* Build configuration list for PBXNativeTarget "DemoViperWithAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217CD09722C8E3C1008A565E /* Debug */,
+				217CD09822C8E3C1008A565E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 217CD07C22C8E3BF008A565E /* Project object */;
+}
